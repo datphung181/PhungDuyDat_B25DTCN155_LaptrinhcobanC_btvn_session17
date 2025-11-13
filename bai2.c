@@ -14,7 +14,7 @@ int main() {
         printf("+-----------------------------------------------------+\n");
         printf("Moi ban lua chon: ");
         scanf("%d", &choice);
-        getchar(); // ?? Xóa ký t? '\n' còn l?i trong b? d?m sau scanf
+        getchar(); 
 
         if (choice == 0) {
             printf("Tam biet!\n");
@@ -23,7 +23,7 @@ int main() {
 
         printf("Nhap vao mot chuoi bat ky: ");
         fgets(str, sizeof(str), stdin);
-        str[strcspn(str, "\n")] = '\0'; // Xóa ký t? xu?ng dòng n?u có
+        str[strcspn(str, "\n")] = '\0'; 
         len = strlen(str);
 
         switch (choice) {
@@ -49,4 +49,5 @@ int main() {
 
     return 0;
 }
+
 
